@@ -1,0 +1,18 @@
+@import '../../sass/utils/variables';
+
+.container {
+  gap: 10px;
+  padding: 20px;
+  display: grid;
+  background-color: $white;
+  box-shadow: $box-shadow-sm;
+  border-radius: $border-radius;
+  border-bottom: 4px solid $primary-color;
+  justify-items: center;
+  text-align: center;
+}
+
+.figure {
+  color: $primary-color;
+  font-size: $icon-size-xl;
+}

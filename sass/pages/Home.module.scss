@@ -1,0 +1,28 @@
+@import '../../sass/utils/variables';
+
+.container {
+  padding: 25px;
+}
+
+// .btn {
+//   width: 100px;
+// }
+
+.card{
+  gap: 10px;
+  padding: 20px;
+  background-color: $white;
+  box-shadow: $box-shadow-sm;
+  border-radius: $border-radius;
+  border-bottom: 4px solid $primary-color;
+}
+
+.cardActions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardIcon {
+  justify-self: flex-end;
+  font-size: $icon-size-xl;
+}
