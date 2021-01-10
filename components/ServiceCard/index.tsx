@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './styles.module.scss';
+import styles from './service.module.scss';
 
 const ServiceCard = ({ route, title, description, icon }: any) => {
   return (

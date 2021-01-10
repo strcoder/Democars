@@ -1,0 +1,60 @@
+@import '../../sass/utils/variables';
+
+.container {
+  /* display: grid; */
+  gap: 25px;
+  padding: 100px 30px;
+  justify-items: center;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  /* display: grid; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.listItem {
+  display: grid;
+  gap: 15px;
+  box-shadow: $box-shadow-sm;
+  padding: 25px;
+  /* width: 200px; */
+  border-radius: $border-radius;
+  transition: $transition-base;
+  margin: 15px;
+  max-width: 280px;
+  background-color: $white;
+  border-bottom: 4px solid $tertiary-color;
+}
+
+.listItem:hover {
+  color: $soft-color;
+  background-color: $primary-color;
+}
+
+.listItem:hover a {
+  color: $soft-color;
+  font-weight: bold;
+}
+
+.listItem:hover .itemIcon {
+  color: $soft-color;
+  background-color: darken($primary-color, 10);
+}
+
+.itemIcon {
+  display: flex;
+  padding: 10px;
+  color: $secondary-color;
+  background-color: rgba($secondary-color, 0.5);
+  // max-width: 20px;
+  // width: 20px;
+  justify-self: flex-start;
+  border-radius: $border-radius;
+  justify-content: center;
+}

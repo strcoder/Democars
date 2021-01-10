@@ -1,22 +1,24 @@
 @import '../../sass/utils/variables';
 
-.header {
+.container {
   gap: 25px;
   width: 100%;
   padding: 15px;
-  color: $soft-color;
+  // color: $soft-color;
+  color: $black;
   align-items: center;
-  background-color: $dark-color;
+  background-color: $white;
   grid-template-columns: auto 1fr;
+  box-shadow: $box-shadow-sm;
 }
 
 .logo {
-  width: 180px;
+  width: 150px;
 }
 
 .menuButton {
   padding: 0;
-  font-size: $icon-size-md;
+  font-size: $icon-size-sm;
 }
 
 .nav {

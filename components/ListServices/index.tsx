@@ -1,7 +1,7 @@
 import { GiCarWheel, GiSoundWaves, GiPaintBucket } from 'react-icons/gi';
 import { FaTools } from 'react-icons/fa'
 import ServiceCard from "../ServiceCard";
-import styles from './styles.module.scss';
+import styles from './services.module.scss';
 
 const ListServices = () => {
   return (

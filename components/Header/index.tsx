@@ -1,16 +1,16 @@
+import { useState } from 'react';
 import { RiMenu4Line } from 'react-icons/ri';
 import { FaOpencart, FaChevronRight } from 'react-icons/fa';
 import { ImEnter } from 'react-icons/im';
 import { IoIosCloseCircleOutline } from 'react-icons/io'
 import { TiHomeOutline } from 'react-icons/ti'
 import Link from 'next/link';
-import styles from './styles.module.scss';
-import { useState } from 'react';
+import styles from './header.module.scss';
 
 const Header = () => {
   const [sidenav, setSidenav] = useState(false);
   return (
-    <header className={styles.header}>
+    <header className={styles.container}>
       <button
         type='button'
         className={`${styles.sidenavBackground}  ${sidenav && styles.sidenavBackgroundActive}`}
@@ -41,12 +41,12 @@ const Header = () => {
       </section>
 
 
-      <button type='button' className={`${styles.menuButton} btn-link-soft`} onClick={() => setSidenav(true)}>
+      <button type='button' className={`${styles.menuButton} btn-link`} onClick={() => setSidenav(true)}>
         <RiMenu4Line />
       </button>
       <Link href='/'>
         <a className={styles.logo}>
-          <img src='/logo.png' alt='Logo' />
+          <img src='/logo2.png' alt='Logo' />
         </a>
       </Link>
     </header>

@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.titles {
+  display: grid;
+  gap: 15px;
+  justify-content: center;
+  text-align: center;
+}
+
+.images {
+  display: grid;
+  justify-items: center;
+  /* justify-items: flex-end; */
+}
+
+.figure {
+  width: 270px;
+}
+
+.figure img {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20%;
+  }
+}

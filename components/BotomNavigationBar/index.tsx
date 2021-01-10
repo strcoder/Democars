@@ -6,12 +6,12 @@ import { ImEnter } from 'react-icons/im';
 import { BiNews } from 'react-icons/bi';
 import { useRouter } from 'next/router';
 
-import styles from './styles.module.scss';
+import styles from './bnb.module.scss';
 
 const BotomNavigationBar = () => {
   const { route } = useRouter();
   return (
-    <section className={styles.navigationBar}>
+    <section className={styles.container}>
       <nav className={styles.nav}>
         <Link href='/products'>
           <a title='Products' className={`${styles.navLink} ${route === '/products' && styles.navLinkActive}`}>
@@ -31,10 +31,10 @@ const BotomNavigationBar = () => {
             <span>Home</span>
           </a>
         </Link>
-        <Link href='/blog'>
-          <a title='Blog' className={`${styles.navLink} ${route === '/blog' && styles.navLinkActive}`}>
+        <Link href='/services'>
+          <a title='Services' className={`${styles.navLink} ${route === '/services' && styles.navLinkActive}`}>
             <BiNews />
-            <span>Blog</span>
+            <span>Services</span>
           </a>
         </Link>
         <Link href='/login'>
