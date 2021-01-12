@@ -1,0 +1,54 @@
+@import '../../sass/utils/variables';
+
+.container {
+  color: $soft-color;
+  background: $gray-color;
+  animation: fadeIn 1s;
+  padding-bottom: 80px;
+}
+
+.information {
+  padding: 25px;
+  gap: 5px;
+}
+
+.information a:last-child {
+  text-align: center;
+}
+
+.socialMedia {
+  padding: 20px 5px;
+  justify-self: flex-start;
+}
+
+.socialMedia a {
+  padding-right: 25px;
+}
+
+.body {
+  padding: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  & nav {
+    gap: 20px;
+    display: grid;
+  }
+  & nav a {
+    color: $soft-color;
+  }
+}
+
+.body--navigation, .body--about, .body--products {
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .information, .body {
+    padding: 25px 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .information {
+    padding-right: 50%;
+  }
+}

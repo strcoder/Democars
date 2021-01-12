@@ -16,7 +16,7 @@ const Hero = () => {
           <img src='/Rin-Seat.png' alt="Llanta" />
         </figure>
         <Link href='/products'>
-          <a title='Si no es ahora será mañana' className='btn'>Comienza ahora</a>
+          <a title='Si no es ahora será mañana' className='btn-success'>Comienza ahora</a>
           </Link>
       </div>
     </div>

@@ -10,6 +10,16 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.list > a:first-child, .list > a:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-end: span 2;
+}
+
+.list > a:first-child > figure, .list > a:last-child > figure {
+  grid-row-end: span 2;
+}
+
 .footer {
   justify-self: flex-end;
 }

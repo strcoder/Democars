@@ -70,7 +70,7 @@ img {
 }
 
 .btn-link, .btn-link-primary {
-  @include buttonLink();
+  @include buttonLink($primary-text-color);
 }
 
 .btn-link-soft {
@@ -82,5 +82,21 @@ img {
 }
 
 .btn-link-success {
-  @include buttonLink($success-color);
+  @include buttonLink($success-text-color);
+}
+
+.btn-link-facebook {
+  @include buttonLink($facebook);
+}
+
+.btn-link-instagram {
+  @include buttonLink($instagram);
+}
+
+.btn-link-twitter {
+  @include buttonLink($twitter);
+}
+
+.btn-link-linkedin {
+  @include buttonLink($linkedin);
 }

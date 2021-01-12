@@ -4,7 +4,7 @@
   margin: 50px 0;
   padding: 20px;
   gap: 25px;
-  background-color: $gray-color;
+  background-color: rgba($gray-color, 1);
   color: $white;
 }
 
@@ -37,7 +37,7 @@
 
 .info p:first-child {
   font-size: $font-size-sm;
-  color: $primary-color;
+  color: $secondary-text-color;
 }
 
 .info p:nth-child(2) {
@@ -52,5 +52,5 @@
 }
 
 .info p:nth-child(3) {
-  color: $acent-color;
+  color: $success-text-color;
 }

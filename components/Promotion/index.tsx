@@ -7,7 +7,7 @@ const Promotion = () => {
       <div className={styles.header}>
         <h4>Promociones</h4>
         <Link href='/products'>
-          <a className='btn-link-acent'>Ver todas</a>
+          <a className='btn-link'>Ver todas</a>
         </Link>
       </div>
       <Link href='/products'>

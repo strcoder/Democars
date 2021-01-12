@@ -1,0 +1,10 @@
+.container {
+  gap: 20px;
+  padding-top: 25px;
+  padding-bottom: 100px;
+}
+
+.list {
+  gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+}

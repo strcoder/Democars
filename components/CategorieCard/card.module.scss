@@ -1,0 +1,59 @@
+@import '../../sass/utils/variables';
+
+.container {
+  gap: 15px;
+  width: 100%;
+  padding: 25px;
+  color: $soft-color;
+  justify-items: center;
+  // background-color: $white;
+  border-radius: $border-radius-lg;
+}
+
+.white {
+  background-color: $white;
+}
+
+@mixin cardBackground($color, $background) {
+  color: $color;
+  background-color: $background;
+  border-right: 4px solid darken($background, 10);
+  border-bottom: 4px solid darken($background, 10);
+}
+
+.primary {
+  @include cardBackground($soft-color, $primary-color);
+}
+
+.secondary {
+  @include cardBackground($soft-color, $secondary-color);
+}
+
+.tertiary {
+  @include cardBackground($soft-color, $tertiary-color);
+}
+
+.acent {
+  @include cardBackground($soft-color, $acent-color);
+}
+
+.success {
+  @include cardBackground($soft-color, $success-color);
+}
+
+.warning {
+  @include cardBackground($soft-color, $warning-color);
+}
+
+.danger {
+  @include cardBackground($soft-color, #701d1d);
+}
+
+.black {
+  @include cardBackground($soft-color, $black);
+}
+
+.figure {
+  // color: $soft-color;
+  font-size: $icon-size-xl;
+}

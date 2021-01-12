@@ -18,7 +18,7 @@ const FeaturedProducts = () => {
       </div>
       <div className={styles.footer}>
         <Link href='/products'>
-          <a className='btn-link-acent'>Ver más</a>
+          <a className='btn-link'>Ver más</a>
         </Link>
       </div>
     </section>

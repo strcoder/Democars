@@ -6,6 +6,19 @@ import styles from './services.module.scss';
 const ListServices = () => {
   return (
     <section className={styles.container}>
+      <h4>Servicios</h4>
+      <ServiceCard
+        route='/instalacion'
+        title='Instalaciones'
+        description='Consulta los servicios de instalacion disponibles'
+        icon={<FaTools />}
+      />
+      <ServiceCard
+        route='/pintura'
+        title='Pintura'
+        description='Hojalateria y pintura de tu automovil'
+        icon={<GiPaintBucket />}
+      />
       <ServiceCard
         route='/products'
         title='Productos'
@@ -15,20 +28,8 @@ const ListServices = () => {
       <ServiceCard
         route='/audio'
         title='Audio'
-        description='Encuentra el mejor audio para tu automovil'
+        description='Instalacion de audio para tu automovil'
         icon={<GiSoundWaves />}
-      />
-      <ServiceCard
-        route='/pintura'
-        title='Pintura'
-        description='Pintamos tu coche a domicilio'
-        icon={<GiPaintBucket />}
-      />
-      <ServiceCard
-        route='/instalacion'
-        title='Instalaciones'
-        description='Consulta los servicios de instalacion disponibles'
-        icon={<FaTools />}
       />
       {/* <ServiceCard />
       <ServiceCard />
