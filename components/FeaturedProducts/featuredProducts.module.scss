@@ -1,0 +1,15 @@
+@import '../../sass/utils/variables';
+
+.container {
+  padding: 20px;
+  gap: 20px;
+}
+
+.list {
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer {
+  justify-self: flex-end;
+}

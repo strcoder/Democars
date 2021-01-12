@@ -37,7 +37,7 @@ img {
   }
 }
 
-.btn, .btn-primary, .btn-secondary, .btn-tertiary, .btn-link, .btn-link-primary, .btn-link-soft, .btn-link-acent {
+.btn, .btn-primary, .btn-secondary, .btn-tertiary, .btn-success, .btn-link, .btn-link-primary, .btn-link-soft, .btn-link-acent, .btn-link-success {
   border: none;
   cursor: pointer;
   font-weight: bold;
@@ -51,7 +51,6 @@ img {
   border-radius: $border-radius;
   font-family: $font-family-base;
   transition: $transition-transform;
-  border-bottom: 4px solid darken($primary-color, 8);
 }
 
 .btn, .btn-primary {
@@ -66,6 +65,10 @@ img {
   @include button($soft-color, $tertiary-color);
 }
 
+.btn-success {
+  @include button($soft-color, $success-color);
+}
+
 .btn-link, .btn-link-primary {
   @include buttonLink();
 }
@@ -76,4 +79,8 @@ img {
 
 .btn-link-acent {
   @include buttonLink($acent-color);
+}
+
+.btn-link-success {
+  @include buttonLink($success-color);
 }

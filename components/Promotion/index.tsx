@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import styles from './promotion.module.scss';
 
-
 const Promotion = () => {
   return (
     <section className={styles.container}>

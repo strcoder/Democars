@@ -1,6 +1,7 @@
 @mixin button($color: $soft-color, $background: $primary-color) {
   color: $color;
   background-color: $background;
+  border-bottom: 4px solid darken($background, 8);
   @if (type-of($background) == 'color') {
     &:hover {
       transform: translateY(-2px);
