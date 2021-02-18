@@ -10,6 +10,9 @@ const Hero = () => {
       <div className={styles.titles}>
         <h1>Apasionados por los autos</h1>
         <h6>Encuentra los mejores accesorios y productos para tu auto</h6>
+        <Link href='/products'>
+          <a title='Si no es ahora será mañana' className='btn-success'>Comienza ahora</a>
+        </Link>
       </div>
       <div className={styles.images}>
         <figure className={styles.figure}>
@@ -17,7 +20,7 @@ const Hero = () => {
         </figure>
         <Link href='/products'>
           <a title='Si no es ahora será mañana' className='btn-success'>Comienza ahora</a>
-          </Link>
+        </Link>
       </div>
     </div>
   );

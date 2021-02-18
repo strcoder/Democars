@@ -1,0 +1,51 @@
+@import '../../sass/utils/variables';
+
+.banner {
+  margin: 50px 0;
+  height: 200px;
+  position: relative;
+}
+
+.banner h4 {
+  // align-self: center;
+  padding: 25px 25px;
+  color: $white;
+  z-index: 20;
+}
+
+.bannerBtn {
+  margin: 0 25px;
+  z-index: 20;
+  align-self: start;
+}
+
+.container_svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url('./../../public/product-2.jpg');
+}
+
+// .media_img {
+//   background-image: url('http://picsum.photos/1200/1200?image=7');
+// }
+
+.svg_img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner{
+    height: 500px;
+    position: relative;
+    align-items: center;
+    padding-left: 10%;
+  }
+  .banner h4 {
+    align-self: flex-end;
+  }
+}

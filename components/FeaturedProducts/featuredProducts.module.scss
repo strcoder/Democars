@@ -8,6 +8,7 @@
 .list {
   gap: 10px;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
 }
 
 .list > a:first-child, .list > a:last-child {
@@ -22,4 +23,28 @@
 
 .footer {
   justify-self: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 20px 10%;
+  }
+  .list > a:first-child, .list > a:last-child {
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-column-end: span 2;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 20px 20%;
+  }
 }

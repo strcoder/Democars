@@ -39,3 +39,13 @@
 .body small {
   color: $gray-500;
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 360px;
+  }
+  .figure {
+    height: 280px;
+    max-width: 340px;
+  }
+}

@@ -10,6 +10,9 @@
   gap: 15px;
   justify-content: center;
   text-align: center;
+  & a {
+    display: none;
+  }
 }
 
 .images {
@@ -31,5 +34,15 @@
   .container {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 20%;
+  }
+  .figure {
+    width: 100%;
+  }
+  .images a {
+    display: none;
+  }
+  .titles a {
+    display: flex;
+    width: 100%;
   }
 }
