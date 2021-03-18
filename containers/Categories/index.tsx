@@ -1,4 +1,4 @@
-import CategorieCard from '../CategorieCard';
+import CategorieCard from '../../components/CategorieCard';
 import styles from './categories.module.scss';
 import { GiCartwheel, GiCarSeat } from 'react-icons/gi';
 import { IoCarSport } from 'react-icons/io5';

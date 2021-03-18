@@ -1,10 +1,12 @@
+import AllProducts from "../containers/AllProducts";
+import Categories from "../containers/Categories"
+
 const Products = () => {
   return (
-    <>
-      <div className="flex">
-        <h1>Products</h1>
-      </div>
-    </>
+    <main>
+      <Categories />
+      <AllProducts />
+    </main>
   );
 };
 

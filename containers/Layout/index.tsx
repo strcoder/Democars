@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Footer from "../components/Footer"
-import Header from "../components/Header"
-import BotomNavigationBar from '../components/BotomNavigationBar';
+import Footer from "../Footer"
+import Header from "../Header"
+import BotomNavigationBar from '../BotomNavigationBar';
 
 const Layout = ({ children }: any) => {
   return (

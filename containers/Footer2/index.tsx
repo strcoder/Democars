@@ -1,5 +1,5 @@
 import BotomNavigationBar from '../BotomNavigationBar';
-import styles from './styles.module.scss';
+// import styles from './footer.module.scss';
 
 const Footer = () => {
   return (

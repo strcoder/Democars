@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 html,
 body {
   font-family: $font-family-base;
@@ -16,10 +15,42 @@ a {
   text-decoration: none;
 }
 
-main, section, article, div, form, header, footer, ul, .grid  { display: grid; }
-nav, li, small, span, a, h1, h2, h3, h4, h5, h6, button, input, figure, .flex { display: flex; }
+main,
+section,
+article,
+div,
+form,
+header,
+footer,
+ul,
+.grid {
+  display: grid;
+}
 
-h1, h2, h3, h4, h5, h6 {
+nav,
+li,
+small,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+figure,
+.flex {
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $font-family-headers;
 }
 
@@ -37,7 +68,18 @@ img {
   }
 }
 
-.btn, .btn-primary, .btn-secondary, .btn-tertiary, .btn-success, .btn-link, .btn-link-primary, .btn-link-soft, .btn-link-acent, .btn-link-success {
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-tertiary,
+.btn-success,
+.btn-link,
+.btn-link-primary,
+.btn-link-secondary,
+.btn-link-soft,
+.btn-link-acent,
+.btn-link-success,
+.btn-link-black {
   border: none;
   cursor: pointer;
   font-weight: bold;
@@ -53,7 +95,8 @@ img {
   transition: $transition-transform;
 }
 
-.btn, .btn-primary {
+.btn,
+.btn-primary {
   @include button();
 }
 
@@ -69,8 +112,13 @@ img {
   @include button($soft-color, $success-color);
 }
 
-.btn-link, .btn-link-primary {
+.btn-link,
+.btn-link-primary {
   @include buttonLink($primary-text-color);
+}
+
+.btn-link-secondary {
+  @include buttonLink($secondary-text-color);
 }
 
 .btn-link-soft {
@@ -83,6 +131,10 @@ img {
 
 .btn-link-success {
   @include buttonLink($success-text-color);
+}
+
+.btn-link-black {
+  @include buttonLink($black);
 }
 
 .btn-link-facebook {
