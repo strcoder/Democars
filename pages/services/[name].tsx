@@ -7,6 +7,7 @@ import styles from '../../sass/pages/Service.module.scss';
 
 const Service = () => {
   const { query } = useRouter();
+  const { name } = query;
   const { register, handleSubmit, watch } = useForm();
   const nameWatch = watch('name', '');
   const emailWatch = watch('email', '');
@@ -20,7 +21,7 @@ const Service = () => {
 
   return (
     <section>
-      <ListServices />
+      <ListServices active={query.name as string} />
       <main className={styles.main}>
         <h1>Agendar una cita</h1>
         <form onSubmit={handleSubmit(onSubmit)} className={`${styles.form} form-control`}>
@@ -43,18 +44,6 @@ const Service = () => {
               type='email'
               className='form-input'
               placeholder='Digita tu correo'
-              ref={register({ required: 'Email requerido' })}
-            />
-          </label>
-          <label htmlFor='Service'>
-            <p>Servicio</p>
-            <input
-              disabled
-              id='Service'
-              name='service'
-              type='text'
-              value={query.name}
-              className='form-input'
               ref={register({ required: 'Email requerido' })}
             />
           </label>

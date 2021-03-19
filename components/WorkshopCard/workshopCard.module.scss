@@ -12,6 +12,10 @@
   gap: 25px;
   box-shadow: $box-shadow-sm;
   color: $white;
+  // transition: $transition-base;
+  // &:hover {
+  //   transform: scale(1.05);
+  // }
 }
 
 .figure {

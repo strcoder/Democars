@@ -18,7 +18,7 @@
 .form {
   gap: 25px;
   grid-template-columns: repeat(2, 1fr);
-  & label:nth-child(5) {
+  & label:nth-child(3), label:nth-child(4) {
     grid-column-end: span 2;
   }
   & button {
@@ -27,10 +27,22 @@
 }
 
 .info {
-  gap: 15px;
+  row-gap: 15px;
+  column-gap: 25px;
   grid-template-columns: repeat(2, 1fr);
   & h5 {
     justify-self: center;
     grid-column-end: span 2;
+  }
+  & p:nth-child(6) {
+    max-width: 480px;
+    grid-column-end: span 2;
+  }
+  & p:nth-child(7) {
+    padding-top: 25px;
+    max-width: 567px;
+    justify-self: center;
+    grid-column-end: span 2;
+    font-size: $font-size-lg;
   }
 }

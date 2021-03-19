@@ -16,3 +16,11 @@
   color: $primary-color;
   font-size: $icon-size-xl;
 }
+
+.active {
+  background-color: $primary-color;
+  color: $white;
+  & .figure {
+    color: $white;
+  }
+}
