@@ -1,3 +1,4 @@
+import Promotion from "../components/Promotion";
 import AllProducts from "../containers/AllProducts";
 import Categories from "../containers/Categories"
 
@@ -6,6 +7,7 @@ const Products = () => {
     <main>
       <Categories />
       <AllProducts />
+      <Promotion />
     </main>
   );
 };

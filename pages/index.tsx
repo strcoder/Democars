@@ -8,6 +8,7 @@ import ListServices from '../containers/ListServices';
 import Categories from '../containers/Categories';
 import Banner from '../components/Banner';
 import Banner2 from '../components/Banner2';
+import Workshop from '../containers/Workshop';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <FeaturedProducts />
       <Banner2 />
       <ListServices />
+      <Workshop />
     </>
   );
 }

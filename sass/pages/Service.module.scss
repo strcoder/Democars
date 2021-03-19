@@ -1,0 +1,36 @@
+@import '../utils/variables';
+
+.main {
+  padding: 100px 25px;
+  margin: 0 250px;
+  margin-bottom: 100px;
+  justify-items: center;
+  background-color: $gray-color;
+  border-radius: $border-radius-lg;
+  color: $soft-color;
+  gap: 25px;
+  & input, textarea, select {
+    width: 100%;
+    // min-width: 300px;
+  }
+}
+
+.form {
+  gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  & label:nth-child(5) {
+    grid-column-end: span 2;
+  }
+  & button {
+    grid-column-end: span 2;
+  }
+}
+
+.info {
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  & h5 {
+    justify-self: center;
+    grid-column-end: span 2;
+  }
+}

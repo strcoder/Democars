@@ -9,25 +9,25 @@ const ListServices = () => {
       <h4>Servicios</h4>
       <div className={styles.list}>
         <ServiceCard
-          route='/instalacion'
+          route='/services/instalacion'
           title='Instalaciones'
           description='Consulta los servicios de instalacion disponibles'
           icon={<FaTools />}
         />
         <ServiceCard
-          route='/pintura'
+          route='/services/pintura'
           title='Pintura'
           description='Hojalateria y pintura de tu automovil'
           icon={<GiPaintBucket />}
         />
         <ServiceCard
-          route='/products'
+          route='/services/products'
           title='Productos'
           description='Encuentra los mejores productos para tu automovil'
           icon={<GiCarWheel />}
         />
         <ServiceCard
-          route='/audio'
+          route='/services/audio'
           title='Audio'
           description='Instalacion de audio para tu automovil'
           icon={<GiSoundWaves />}

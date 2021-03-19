@@ -1,0 +1,10 @@
+.container {
+  justify-items: center;
+  gap: 25px;
+  padding-bottom: 50px;
+}
+
+.list {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}

@@ -1,18 +1,32 @@
 @mixin simpleForm() {
-  &--control {
+  &-control {
     gap: 10px;
   }
-  &--label {
+  &-label {
     margin-top: 20px;
     font-size: $font-size-md;
   }
-  &--input {
+  &-input {
     padding: 10px;
     border-radius: $border-radius;
     // border: 1px solid lighten($gray-color, 60%);
     border: none;
   }
-  &--button {
+  &-textarea {
+    padding: 10px;
+    border-radius: $border-radius;
+    // border: 1px solid lighten($gray-color, 60%);
+    border: none;
+    resize: none;
+  }
+  &-select {
+    padding: 10px;
+    border-radius: $border-radius;
+    // border: 1px solid lighten($gray-color, 60%);
+    border: none;
+    background-color: $white;
+  }
+  &-button {
     width: 100%;
     justify-content: center;
   }

@@ -152,3 +152,7 @@ img {
 .btn-link-linkedin {
   @include buttonLink($linkedin);
 }
+
+.form {
+  @include simpleForm();
+}
