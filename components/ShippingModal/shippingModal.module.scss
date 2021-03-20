@@ -1,0 +1,24 @@
+@import '../../sass/utils/variables';
+
+.form {
+  gap: 20px;
+  padding-bottom: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  & > p {
+    grid-column-end: span 2;
+  }
+  & input {
+    border: 1px solid rgba($gray-color, 0.4);
+  }
+  & label:nth-child(10) {
+    grid-column-end: span 2;
+    & input {
+      width: 100%;
+    }
+  }
+}
+
+.divider {
+  border-top: 2px solid $success-color;
+  grid-column-end: span 2;
+}

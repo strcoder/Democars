@@ -73,13 +73,20 @@ img {
 .btn-secondary,
 .btn-tertiary,
 .btn-success,
+.btn-soft,
+.btn-disabled,
 .btn-link,
 .btn-link-primary,
 .btn-link-secondary,
+.btn-link-danger,
 .btn-link-soft,
 .btn-link-acent,
 .btn-link-success,
-.btn-link-black {
+.btn-link-black,
+.btn-outline,
+.btn-outline-soft,
+.btn-outline-success,
+.btn-outline-danger {
   border: none;
   cursor: pointer;
   font-weight: bold;
@@ -112,6 +119,10 @@ img {
   @include button($soft-color, $success-color);
 }
 
+.btn-soft {
+  @include button($primary-color, $soft-color);
+}
+
 .btn-link,
 .btn-link-primary {
   @include buttonLink($primary-text-color);
@@ -133,6 +144,10 @@ img {
   @include buttonLink($success-text-color);
 }
 
+.btn-link-danger {
+  @include buttonLink($danger-color);
+}
+
 .btn-link-black {
   @include buttonLink($black);
 }
@@ -151,6 +166,23 @@ img {
 
 .btn-link-linkedin {
   @include buttonLink($linkedin);
+}
+
+.btn-outline,
+.btn-outline-primary {
+  @include buttonOutline($primary-color, $soft-color);
+}
+
+.btn-outline-danger {
+  @include buttonOutline($danger-color, $soft-color);
+}
+
+.btn-outline-success {
+  @include buttonOutline($success-color, $soft-color);
+}
+
+.btn-outline-soft {
+  @include buttonOutline($soft-color, $primary-color);
 }
 
 .form {

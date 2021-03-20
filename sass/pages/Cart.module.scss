@@ -1,0 +1,16 @@
+.container {
+  padding: 25px;
+  justify-items: center;
+  gap: 25px;
+  min-height: 80vh;
+  align-content: flex-start;
+}
+
+.body {
+  grid-template-columns: 1fr auto;
+  gap: 50px;
+}
+
+.list {
+  gap: 25px;
+}
