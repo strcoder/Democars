@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Modal from "../Modal";
 import ShippingModal from "../ShippingModal";
 import styles from './cartInfo.module.scss';
 
