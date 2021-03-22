@@ -1,0 +1,144 @@
+@import '../utils/variables';
+
+.container {
+  justify-items: center;
+  grid-template-columns: auto 1fr ;
+  padding: 50px 350px;
+  padding-top: 100px;
+  gap: 30px;
+}
+
+.back {
+  top: 100px;
+  position: absolute;
+  & button {
+    font-size: $font-size-md;
+  }
+  & button span {
+    padding-left: 5px;
+  }
+}
+
+.header {
+  padding: 10px;
+  border-radius: $border-radius;
+  background-color: $white;
+}
+
+.figure {
+  width: 450px;
+  height: 380px;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: $border-radius;
+  }
+}
+
+.info {
+  padding: 10px;
+  align-content: flex-start;
+  gap: 20px;
+  & > p:nth-child(3) {
+    font-size: $font-size-xl;
+  }
+}
+
+.infoHeader {
+  display: flex;
+  align-items: flex-end;
+  & p {
+    padding-left: 10px;
+  }
+}
+
+.actions {
+  display: flex;
+  & button {
+    margin-right: 10px;
+    font-size: $font-size-md;
+  }
+}
+
+.reviews {
+  padding: 100px 0;
+  gap: 25px;
+  grid-column-end: span 2;
+  justify-items: center;
+}
+
+.list {
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.related {
+  gap: 25px;
+  grid-column-end: span 2;
+  grid-template-columns: repeat(4, 1fr);
+  & > p {
+    grid-column-end: span 4;
+    font-size: $font-size-xl;
+  }
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  & p {
+    padding-right: 10px;
+  }
+}
+
+.form {
+  gap: 20px;
+  width: 100%;
+  padding: 25px 50px;
+  background-color: $white;
+  border-radius: $border-radius;
+  & textarea {
+    width: 100%;
+    border: 1px solid rgba($gray-color, 0.2);
+  }
+}
+
+
+////////////////////////////////////////////////////////////////////////
+
+.reviewContainer {
+  gap: 15px;
+  padding: 25px;
+  max-width: 500px;
+  align-items: flex-start;
+  // box-shadow: $box-shadow-sm;
+  border-radius: $border-radius;
+  // background-color: lighten($light-background, 5%);
+  border: 2px solid rgba($black, 0.2);
+  transition: $transition-base;
+  &:hover {
+    transform: scale(1.01);
+    background-color: $white;
+  }
+}
+
+.reviewHeader {
+  column-gap: 15px;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+}
+
+.reviewFigure {
+  width: 60px;
+  height: 60px;
+  grid-row-end: span 2;
+  border: 3px solid $white;
+  border-radius: $circle-radius;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: $circle-radius;
+  }
+}

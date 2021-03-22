@@ -83,9 +83,11 @@ img {
 .btn-link-acent,
 .btn-link-success,
 .btn-link-black,
+.btn-link-gray,
 .btn-outline,
 .btn-outline-soft,
 .btn-outline-success,
+.btn-outline-acent,
 .btn-outline-danger {
   border: none;
   cursor: pointer;
@@ -152,6 +154,10 @@ img {
   @include buttonLink($black);
 }
 
+.btn-link-gray {
+  @include buttonLink($gray-color);
+}
+
 .btn-link-facebook {
   @include buttonLink($facebook);
 }
@@ -179,6 +185,10 @@ img {
 
 .btn-outline-success {
   @include buttonOutline($success-color, $soft-color);
+}
+
+.btn-outline-acent {
+  @include buttonOutline($acent-color, $soft-color);
 }
 
 .btn-outline-soft {

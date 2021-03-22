@@ -3,7 +3,7 @@ import styles from './productCard.module.scss';
 
 const ProductCard = ({ name, image }: { name: string, image: string }) => {
   return (
-    <Link href='/products'>
+    <Link href='/products/12ab34'>
       <a className={styles.container}>
         <figure className={styles.figure}>
           <img src={image} alt={name} />
