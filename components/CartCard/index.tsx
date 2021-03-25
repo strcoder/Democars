@@ -4,8 +4,8 @@ import styles from './cartCard.module.scss';
 const CartCard = ({ product }: any) => {
   return (
     <div className={styles.container}>
-      <button type='button' className='btn-link-danger'>
-        <FaTrash />
+      <button type='button' className='btn-link'>
+        <FaTrash size={18} />
       </button>
       <figure className={styles.image}>
         <img src={product.image || '/product-default.png'} alt='' />

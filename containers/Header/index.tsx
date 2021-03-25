@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { RiMenu4Line } from 'react-icons/ri';
-import { FaOpencart, FaChevronRight } from 'react-icons/fa';
+import { FaOpencart, FaChevronRight, FaSurprise } from 'react-icons/fa';
 import { ImEnter } from 'react-icons/im';
-import { IoIosCloseCircleOutline } from 'react-icons/io'
-import { TiHomeOutline } from 'react-icons/ti'
+import { AiOutlinePhone, AiOutlineProfile } from 'react-icons/ai';
+import { IoIosCloseCircleOutline } from 'react-icons/io';
+import { TiHomeOutline } from 'react-icons/ti';
 import Link from 'next/link';
 import styles from './header.module.scss';
+import { IoCarSportOutline, IoWalletOutline } from 'react-icons/io5';
 
 const Header = () => {
   const [sidenav, setSidenav] = useState(false);
@@ -22,20 +24,39 @@ const Header = () => {
         </button>
         <nav className={styles.nav}>
           <Link href='/'>
-              <a>
-                <TiHomeOutline />
-                <span>Home</span>
+              <a className='btn-link-secondary'>
+                <TiHomeOutline size={25} />
+                <span>Producto</span>
                 <FaChevronRight />
               </a>
           </Link>
           <Link href='/'>
-            <a>Home</a>
+            <a className='btn-link-secondary'>
+              <AiOutlinePhone size={25} />
+              <span>Contacto</span>
+              <FaChevronRight />
+            </a>
           </Link>
           <Link href='/'>
-            <a>Home</a>
+            <a className='btn-link-secondary'>
+              <IoCarSportOutline size={25} />
+              <span>Conocenos</span>
+              <FaChevronRight />
+            </a>
           </Link>
           <Link href='/'>
-            <a>Home</a>
+            <a className='btn-link-secondary'>
+              <IoWalletOutline size={25} />
+              <span>Trabaja con nosotros</span>
+              <FaChevronRight />
+            </a>
+          </Link>
+          <Link href='/'>
+            <a className='btn-link-secondary'>
+              <AiOutlineProfile size={25} />
+              <span>Terms y condiciones</span>
+              <FaChevronRight />
+            </a>
           </Link>
         </nav>
       </section>

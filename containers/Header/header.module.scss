@@ -25,6 +25,9 @@
   color: $black;
   display: flex;
   flex-direction: column;
+  & a span {
+    padding: 0 5px;
+  }
 }
 
 .sidenav {

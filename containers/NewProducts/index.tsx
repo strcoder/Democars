@@ -14,7 +14,7 @@ const NewProducts = () => {
         <ProductCard name='Nombre de ejemplo bien pinche grandote' image='/product-2.jpg' />
         <ProductCard name='Nombre de ejemplo grande' image='rin-1.png' />
         <ProductCard name='Nombre' image='product-3.jpg' />
-        <ProductCard name='Nombre de ejemplo bien pinche grandote' image='product-default.png' />
+        <ProductCard name='Nombre de ejemplo bien pinche grandote Nombre de ejemplo bien pinche grandote Nombre de ejemplo bien pinche grandote Nombre de ejemplo bien pinche grandote' image='product-default.png' />
       </div>
       <div className={styles.footer}>
         <Link href='/products'>
