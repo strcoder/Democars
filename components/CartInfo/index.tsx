@@ -2,8 +2,14 @@ import { useState } from "react";
 import ShippingModal from "../ShippingModal";
 import styles from './cartInfo.module.scss';
 
+type User = {
+  name?: string,
+  address?: string,
+  lastname?: string,
+}
+
 const CartInfo = () => {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState<User>({});
   const [error, setError] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
@@ -18,14 +24,14 @@ const CartInfo = () => {
     <div className={styles.container}>
       <p><strong>Informacion de pago</strong></p>
       <div className={styles.info}>
-        <p title={Object.keys(user).length !== 0 ? `${user.name} ${user.lastname}` : 'Sin usuario'}>
-          {Object.keys(user).length !== 0 ? `${user.name} ${user.lastname}` : 'Sin usuario'}
+        <p title={Object.keys(user).length !== 0 ? `${user?.name} ${user?.lastname}` : 'Sin usuario'}>
+          {Object.keys(user).length !== 0 ? `${user?.name} ${user?.lastname}` : 'Sin usuario'}
         </p>
         {/* <p title={Object.keys(user).length !== 0 ? user.email : 'Sin correo'}>
           {Object.keys(user).length !== 0 ? user.email : 'Sin correo'}
         </p> */}
-        <p title={Object.keys(user).length !== 0 ? user.address : 'Sin datos de envio'}>
-          {Object.keys(user).length !== 0 ? user.address : 'Sin datos de envio'}
+        <p title={Object.keys(user).length !== 0 ? user?.address : 'Sin datos de envio'}>
+          {Object.keys(user).length !== 0 ? user?.address : 'Sin datos de envio'}
         </p>
         <button type='button' className='btn-link-acent' onClick={() => setShowModal(true)}>
           Editar información
