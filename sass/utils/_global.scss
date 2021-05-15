@@ -74,6 +74,7 @@ img {
 .btn-tertiary,
 .btn-success,
 .btn-soft,
+.btn-acent,
 .btn-disabled,
 .btn-link,
 .btn-link-primary,
@@ -123,6 +124,10 @@ img {
 
 .btn-soft {
   @include button($primary-color, $soft-color);
+}
+
+.btn-acent {
+  @include button($soft-color, $acent-color);
 }
 
 .btn-link,
