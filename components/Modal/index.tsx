@@ -5,6 +5,7 @@ import styles from './modal.module.scss';
 
 const Modal = ({ show, onClose, children, title }: any) => {
   const [isBrowser, setIsBrowser] = useState(false);
+  const modal = document.getElementById("modal-root");
 
   useEffect(() => {
     setIsBrowser(true);
@@ -36,10 +37,10 @@ const Modal = ({ show, onClose, children, title }: any) => {
     </section>
   ) : null;
 
-  if (isBrowser) {
+  if (isBrowser &&  modal) {
     return ReactDOM.createPortal(
       modalContent,
-      document.getElementById("modal-root")
+      modal
     );
   } else {
     return null;
